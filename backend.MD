@@ -22,7 +22,7 @@ Configure the application.
 
 Add application User
 ```
-useradd expense
+useradd --system --home /app --shell /sbin/nologin --comment "expense user" expense
 ```
 
 User expense is a function / daemon user to run the application. Apart from that we don't use this user to login to server.
